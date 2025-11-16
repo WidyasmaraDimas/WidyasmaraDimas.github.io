@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bottle Transport Crane
-description:  As part of the Engineering Design course, my team and I designed and fabricated a bottle transport crane with the objective of moving three bottles from one side into another, seprated by a one-inch square extrusion.
+description:  For my Introduction to Engineering Design course, my team and I engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. I designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, I programmed an Arduino to control the servos and motors, enabling the device's automated function.
 skills: 
 - SolidWorks
 - Mechanical Assembly
@@ -9,5 +9,6 @@ skills:
 - COTS Implementation
 - Microcontroller & C Programming
 - Automatic algorithm
+- Structural Analysis
 main-image: /project.webp 
 ---
