@@ -10,5 +10,5 @@ skills:
 - Microcontroller & C Programming
 - Automatic algorithm
 - Structural Analysis
-main-image: /project.webp 
+main-image: /CAD_Plain.png
 ---
