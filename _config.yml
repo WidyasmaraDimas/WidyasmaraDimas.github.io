@@ -70,7 +70,7 @@ skills:
     - Python 
     - MATLAB
     - Microcontroller
-  - category: Programming
+  - category: Simulation & Analysis
     tools:
     - Finite Element Analysis 
     - Computational Fluid Dynamics
@@ -82,13 +82,14 @@ formspree-key:   https://formspree.io/f/xpwkjjdq
 
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
-colors: # this is the basic theme
+colors: 
   text: "#2c3333"
   border: "#e0f2ef"
   link: "#40b3a2"
   highlight: "#2a9d8f"
   background: "#f7fbfa"
   light_background: "#f0f9f7"
+  
 # A few examples. 
 basic theme:
   text: "#1a1c20"
@@ -98,7 +99,7 @@ basic theme:
   background: "#ffffff"
   light_background: "#f3f5fb"
   
-  mint theme:
+mint theme:
   text: "#2c3333"
   border: "#e0f2ef"
   link: "#40b3a2"
