@@ -46,6 +46,6 @@ To achieve fully autonomous functionality, an algorithm was created in C program
 
 ---
 
-<iframe src="https://drive.google.com/file/d/1OKEUttQn8Sznfj0GuE0TUEFm3MftZvFa/view" ></iframe>
+<iframe src="https://drive.google.com/file/d/1OKEUttQn8Sznfj0GuE0TUEFm3MftZvFa/view?usp=sharing" ></iframe>
 
 ---
