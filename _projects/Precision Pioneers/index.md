@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bottle Transport Crane
-description:  For my Introduction to Engineering Design course, my team and I engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. I designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, I programmed an Arduino to control the servos and motors, enabling the device's automated function.
+title: The Precision Pioneers: Bottle Transport Crane
+description:  For my Introduction to Engineering Design course, my team, The Precision Pioneers, and I engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. My team designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, an Arduino microcontroller was programmed to control the servos and motors, enabling the device's automated function.
 skills: 
 - SolidWorks
 - Mechanical Assembly
@@ -20,21 +20,21 @@ The objective for this project was to design and fabricate a device capable of a
 
 # Design & Analysis
 
-### Design Ideas:
+### **Design Ideas:**
 The key inspiration for our crane-like design was the gantry crane, usually found on shipyards. We found that the vertical and horizontal transportation of crates by the gantry crane inspiring and it became a big part of the final product. We mainly studied the mechanism by which the gantry crane moves containers.
 
-{% include image-gallery.html images="Gantry.jpg" height="400" %} 
+{% include image-gallery.html images="/Gantry.jpg" height="400" %} 
 
-### CAD & Modeling:
+### **CAD & Modeling:**
 Our team designed the complete mechanical assembly in SolidWorks, with an emphasis on a high-strength crane structure. Geometric dimensioning and tolerancing was implemented for a sturdy fitment and the integration of COTS hardware. 
 I was responsible in designing the claw mechanism, with the challenge of grabbing three bottles with one mechanism and one servo. The design idea that I implemented consists of two rack and pinion gear mechanism and three attached grippers two ensure consistency and simplicity. 
 
-{% include image-gallery.html images="Gripper.png" height="400" %} 
+{% include image-gallery.html images="/Gripper.png" height="400" %} 
 
-### Analysis & Validation:
+### **Analysis & Validation:**
 A finite element analysis of the edge of the rails was conducted to ensure that the mechanism can carry a load of at least 1-kg. From the simulation, it was seen that the ABS material can withstand the given load with minimal deflection and stress.
 
-{% include image-gallery.html images="Sim.png" height="400" %} 
+{% include image-gallery.html images="/Sim.png" height="400" %} 
 
 
 # Prototyping and Fabrication
