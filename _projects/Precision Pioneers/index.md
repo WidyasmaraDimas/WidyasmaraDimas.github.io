@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Precision Pioneers: Bottle Transport Crane
+title: The Precision Pioneers | Bottle Transport Crane
 description:  For my Introduction to Engineering Design course, my team, The Precision Pioneers, and I engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. My team designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, an Arduino microcontroller was programmed to control the servos and motors, enabling the device's automated function.
 skills: 
 - SolidWorks
