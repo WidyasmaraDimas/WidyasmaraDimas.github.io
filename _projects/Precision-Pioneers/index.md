@@ -44,8 +44,10 @@ FDM 3D-printing was used to fabricate the whole custom-designed grippers and rai
 # Automation and Integration
 To achieve fully autonomous functionality, an algorithm was created in C program by testing the prototype. An addition of a joystick allows manual operation of the mechanism while simultaneously providing a button to activate the automatic process of moving the bottles. The algorithm controlled the sequence of servos and DC motors to transport three bottles with 100% success rate.  
 
+
+
 ---
 
-<iframe src="https://drive.google.com/file/d/1OKEUttQn8Sznfj0GuE0TUEFm3MftZvFa/view?usp=sharing" ></iframe>
+{% include youtube-video.html id="e59cx1e9nLI" autoplay = "false" %}  
 
 ---
