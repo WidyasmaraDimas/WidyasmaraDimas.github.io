@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Precision Pioneers | Bottle Transport Crane
-description:  For my Introduction to Engineering Design course, my team, The Precision Pioneers, and I engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. My team designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, an Arduino microcontroller was programmed to control the servos and motors, enabling the device's automated function.
+description:  For my Introduction to Engineering Design course, my team (The Precision Pioneers) engineered a custom bottle transport device from concept to functional prototype. The objective was to automatically move three bottles over a one-inch square extrusion barrier. My team designed the mechanical components in SolidWorks, validated the structural integrity using FEA, and fabricated the parts using 3D-printing and laser cutting. Finally, an Arduino microcontroller was programmed to control the servos and motors, enabling the device's automated function.
 skills: 
 - SolidWorks
 - Mechanical Assembly
@@ -39,12 +39,41 @@ A finite element analysis of the edge of the rails was conducted to ensure that 
 # Prototyping and Fabrication
 FDM 3D-printing was used to fabricate the whole custom-designed grippers and rail guides, which allowed for complex geometries. The main crane chassis were laser-cut from balsa wood for strong and precise fabrication. This iterative design process allowed us to quickly test and validate design choices, such as the shape of the gripper and gear tolerances for lifting mechanism.
 
-{% include youtube-video.html id="ZqcEUGRrP74" autoplay = "true" %}  
+{% include youtube-video.html id="ZqcEUGRrP74" autoplay = "true" %} <br>
 
 # Automation and Integration
-To achieve fully autonomous functionality, an algorithm was created in C program by testing the prototype. An addition of a joystick allows manual operation of the mechanism while simultaneously providing a button to activate the automatic process of moving the bottles. The algorithm controlled the sequence of servos and DC motors to transport three bottles with 100% success rate.  
+To achieve fully autonomous functionality, an algorithm was created in C program by testing the prototype. An addition of a joystick allows manual operation of the mechanism while simultaneously providing a button to activate the automatic process of moving the bottles. The algorithm controlled the sequence of servos and DC motors to transport three bottles with 100% success rate.
+<br>
+The implementation of the joystick uses a simple principle where when the joystick axes exceeds a certain threshold, it would send command to move the mechanism. Below is a code snippet for the joystick.
+<br>
+```C
+int x = analogRead(pinhorz);
+int y = analogRead(pinvert);
 
+if(x < 256) {
+  digitalWrite(pinA1, LOW);
+  digitalWrite(pinA2, HIGH);
+  analogWrite(ena,100);
+  }
 
+```
+<br>
+The algorithm uses timings in controlling the DC motor used, as seen in the code snippet below. The prototype was tested extensively to find the correct timing sequence for each activation of the DC motor to achieve succesful operation.<br>
+
+```C
+digitalWrite(pinA1, LOW);   // H goes out
+digitalWrite(pinA2, HIGH);
+analogWrite(ena,110);
+delay(1400);
+
+digitalWrite(pinA1, LOW);
+digitalWrite(pinA2, LOW);
+delay(1000);
+```
+<br>
+
+# Outcome
+The final prototype succesfully met all requirements of autonomously transporting all three bottles over the barrier under 30 seconds. This project was a valuable experience in managing the complete engineering cycle, from a digital CAD idea and simulation, to a functional autonomous prototype. This project not only reinforced the importance of rapid prototyping and integrating mutliple mechanisms to solve problems, but also solidifies teamwork and communication skills. <br>
 
 ---
 
