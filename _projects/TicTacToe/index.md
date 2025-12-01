@@ -24,13 +24,13 @@ Since Tic-Tac-Toe is a game on a 3x3 grid, 2D arrays were used to represent the 
 A simple function to take player input was implemented within the game loop, along with an error-handling function to make sure the program does not crash if user inputted an invalid data.
 
 ### **Modular Design:**
-The program was structured into distinct functions such as print board, player input, player move, win check, and more. This was done to ensure that the program was easy to debug. <br><br>
+The program was structured into distinct functions such as print board, player input, player move, win check, and more. This was done to ensure that the program was easy to debug. <br>
 
-Upon starting the game, the player will be given the option to play against another in a pass and play manner or play against the computer. The figure below shows the starting message of the game.<br><br>
+Upon starting the game, the player will be given the option to play against another in a pass and play manner or play against the computer. The figure below shows the starting message of the game.<br>
 
-{% include image-gallery.html images="intro.png" height="400" %} <br><br>
+{% include image-gallery.html images="intro.png" height="300" %} <br>
 
-One notable function is the function to take the player input. In this function, there are embedded error checking system that simply uses three if functions, to make sure that the player input is valid. Finally, the program outputs the position that the player wants to put their marks on, as seen on the code snippet below.<br><br>
+One notable function is the function to take the player input. In this function, there are embedded error checking system that simply uses three if functions, to make sure that the player input is valid. Finally, the program outputs the position that the player wants to put their marks on, as seen on the code snippet below.<br>
 
 ```C
 void input(int *m, int *n, char *p, char a[3][3])
@@ -55,8 +55,8 @@ void input(int *m, int *n, char *p, char a[3][3])
     printf("\n");
 }
 ```
-<br><br>
-One important function is a function to check for wins and draws. The code scans for all horizontal, vertical, and diagonal part of the board and checks if there are filled with the same marks. The code snippet below shows the if functions that are used to check for wins. <br><br>
+<br>
+One important function is a function to check for wins and draws. The code scans for all horizontal, vertical, and diagonal part of the board and checks if there are filled with the same marks. The code snippet below shows the if functions that are used to check for wins. <br>
 
 ```C
 int wincheck(char a[3][3], char *p)     // function to check for wins
@@ -73,13 +73,13 @@ int wincheck(char a[3][3], char *p)     // function to check for wins
     return 0;
 }
 ```
-<br><br>
+<br>
 
-If a win is detected, a message will be displayed, as seen in the figure below. <br><br>
+If a win is detected, a message will be displayed, as seen in the figure below. <br>
 
-{% include image-gallery.html images="win.png" height="400" %} <br><br>
+{% include image-gallery.html images="win.png" height="200" %} <br>
 
-There are two categories of compouter opponent that was programmed into the game, normal mode and hard mode. On the easy mode, the computer does random moves and only prevents wins if the player is one move away from winning by blocking; like a very reasonable average player would do. This function is built on an _if loop_ to make sure that it checks for every row, column, and diagonal. The code snippet below shows the random comoputer move function, which includes the process of checking if the field is already filled. <br><br>
+There are two categories of compouter opponent that was programmed into the game, normal mode and hard mode. On the easy mode, the computer does random moves and only prevents wins if the player is one move away from winning by blocking; like a very reasonable average player would do. This function is built on an _if loop_ to make sure that it checks for every row, column, and diagonal. The code snippet below shows the random comoputer move function, which includes the process of checking if the field is already filled. <br>
 
 ```C
 void randommove(char a[3][3], char *p)
@@ -95,9 +95,9 @@ void randommove(char a[3][3], char *p)
     move(a, &m, &n, p);
 }
 ```
-<br><br>
+<br>
 
-For the hard computer opponent, the computer responds differently if the player starts first or if the computer starts first. If the computer starts first, it would place a mark on the corner, and place another one on the opposite corner to prepare for a strategic win. If the player starts first, the computer has a specific respond to different player strategies to prevent the player from winning. If played correctly, the player would always draw the computer. The computer would also block the player from winning, and always seek a move to win. The code below shows the computer code in placing the marks on the corners, where c is the number of turns passed. <br><br>
+For the hard computer opponent, the computer responds differently if the player starts first or if the computer starts first. If the computer starts first, it would place a mark on the corner, and place another one on the opposite corner to prepare for a strategic win. If the player starts first, the computer has a specific respond to different player strategies to prevent the player from winning. If played correctly, the player would always draw the computer. The computer would also block the player from winning, and always seek a move to win. The code below shows the computer code in placing the marks on the corners, where c is the number of turns passed. <br>
 
 ```C
     if(*c == 0) // Starts with corner 1 1
@@ -121,10 +121,10 @@ For the hard computer opponent, the computer responds differently if the player 
         }
     }
 ```
-<br><br>
+<br>
 
 # Outcome
-The final application is a fully-functional Tic-Tac-Toe game that succesfully manages the flow of game between player and player or player and computer. It accurately detects all possible win and draw conditions, and handles any invalid user input. The computer opponent succesfully implemented a proven and tested strategy to win or draw against the player. <br><br>
+The final application is a fully-functional Tic-Tac-Toe game that succesfully manages the flow of game between player and player or player and computer. It accurately detects all possible win and draw conditions, and handles any invalid user input. The computer opponent succesfully implemented a proven and tested strategy to win or draw against the player. <br>
 
 Through this project, I gained a deeper understanding of _loop_ functions and conditional statements, which are important in most programming problem in microcontrollers. Furthermore, I learned to break a complex problem into smaller managable functions through the modular design of the code. Not only does the modular approach made the program easier to debug, but also is a standard practice in engineering design.<br>
 
