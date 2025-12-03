@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PID - Controlled Automatic Ball Balancer
-description:  FOr the Introuction to Mechatronics course, I co-engineered an electromchanical system designed to automatically balance a steel ball on a tilting platform. The device uses a closed-loop feedback control system where a touchscreen detects the ball's location and a Raspberry Pi executes a PID control algorithm to adjust servo position to counteract disturbances in real-time.
+description:  For the Introduction to Mechatronics course, I co-engineered an electromchanical system designed to automatically balance a steel ball on a tilting platform. The device uses a closed-loop feedback control system where a touchscreen detects the ball's location and a Raspberry Pi executes a PID control algorithm to adjust servo position to counteract disturbances in real-time.
 skills: 
 - SolidWorks
 - Mechanical Assembly
@@ -17,7 +17,7 @@ main-image: /mainimg.png
 The primary objective was to design a mechanism that is capable of balancing a steel ball on a flat platform. The mechanism has to be able to disturbances to the system and keep it stable. This system requires a position feedback input and precise actuation output to balance the ball on a specific position. A secondary challenge was to implement a remote manipulation of the system via BLuetooth.
 
 
-# Design & Fabrication
+# Design
 The design of the platform requires a joint that only has two degrees of freedom, the tilt on the vertical and horizontal axes. The solution that we implemented was the universal joint, that is commmonly found on machineries. This allowed the platform to tilt freely on both axes.<br>
 
 {% include image-gallery.html images="ujoint.png" height="300" %} <br>
