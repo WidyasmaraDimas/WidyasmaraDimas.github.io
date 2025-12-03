@@ -9,7 +9,7 @@ skills:
 - COTS Implementation
 - Microcontroller & Python Programming
 - Control System
-main-image: /CAD_Plain.png
+main-image: /mainimg.png
 ---
 
 ---
@@ -25,7 +25,7 @@ The design of the platform requires a joint that only has two degrees of freedom
 # Prototyping and Fabrication
 The mechanical components were 3D printed. During the initial assembly, we identified tolerance issues that affected the mechanism's assembly. The CAD model was iterated with adjusted tolerances and the components were re-printed to ensure precise fit.<br>
 
-{% include image-gallery.html images="ujoint.png" height="300" %} <br>
+{% include image-gallery.html images="fabrication.png" height="300" %} <br>
 
 # Control System and Logic
 
