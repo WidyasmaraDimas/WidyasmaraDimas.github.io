@@ -9,7 +9,7 @@ skills:
 - COTS Implementation
 - Microcontroller & Python Programming
 - Control System
-main-image: /mainimg.png
+main-image: /mainimg.jpg
 ---
 
 ---
